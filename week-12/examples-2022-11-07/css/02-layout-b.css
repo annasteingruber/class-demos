@@ -1,0 +1,79 @@
+/* 02-layout-b.css */
+
+body {
+  font-family: "Helvetica", "Arial", sans-serif;
+  line-height: 1.5;
+
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 20px;
+  grid-template-areas:
+  "header   header"
+  "nav      main"
+  "footer   footer";
+
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+ul {
+  margin-top: 0;
+  padding-left: 20px;
+}
+
+
+
+header,
+nav,
+footer {
+  background-color: #eee;
+}
+
+header {
+  grid-area: header;
+  padding-left: 25px;
+}
+
+nav {
+  grid-area: nav;
+
+  padding: 20px;
+}
+
+main {
+  grid-area: main;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  grid-template-areas:
+  "welcome   welcome"
+  "cats      coming-soon";
+}
+
+footer {
+  grid-area: footer;
+  padding-left: 20px;
+}
+
+
+section {
+  background-color: #ddd;
+  padding: 20px;
+}
+
+#welcome {
+  grid-area: welcome;
+}
+
+#coming-soon {
+  grid-area: coming-soon;
+}
+
+#cats {
+  grid-area: cats;
+}

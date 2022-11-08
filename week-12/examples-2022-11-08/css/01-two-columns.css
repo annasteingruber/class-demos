@@ -1,0 +1,27 @@
+/* 01-two-columns.css */
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 450px 450px;
+  grid-gap: 20px;
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+section {
+  background-color: #ddd;
+  padding: 20px;
+}
